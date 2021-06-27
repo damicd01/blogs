@@ -58,12 +58,13 @@ As I alluded to earlier for each Subnet 5 IPs are reserved and here is what they
 
 This is another quick reference which dictates which octet can change depending on the Subnet Mask assigned:
 
-|  /32    |	No Octet can Change   |
-|---------|-----------------------|
-|  /24    |	  Last Octet          |
-|  /16    |	  Last 2 Octets       |
-|  /8     |   Last 3 Octets       |
-|  /0     |   All 4 Octets        |
+| Subnet Mask |   Octet Change          |
+|-------------|-------------------------|
+|  /32        |	  No Octet can Change   |
+|  /24        |	  Last Octet            |
+|  /16        |	  Last 2 Octets         |
+|  /8         |   Last 3 Octets         |
+|  /0         |   All 4 Octets          |
 
 The next screenshow shows the Main Route Table allocated to the VPC and from that we can tell that:
 - 172.31.0.0/16 traffic is local traffic and will be routed within the VPC
