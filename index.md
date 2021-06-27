@@ -2,7 +2,7 @@
 
 ## Overview
 
-In this section we will cover what a VPC is in the AWS ecosystem, how the default one looks like and all the relevant components which come with the default one.
+In this section we will cover what a VPC is in the AWS ecosystem, how the default one looks like and all the relevant components which get configured alonside it.
 
 ## So what is a VPC?
 
@@ -58,12 +58,12 @@ As I alluded to earlier for each Subnet 5 IPs are reserved and here is what they
 
 This is another quick reference which dictates which octet can change depending on the Subnet Mask assigned:
 
-|/32    |	No Octet can Change   |
-|-------|-------------------------|
-|/24    |	Last Octet            |
-|/16    |	Last 2 Octets         |
-|/8	    |   Last 3 Octets         |
-|/0	    |   All 4 Octets          |
+|  /32    |	No Octet can Change   |
+|---------|-----------------------|
+|  /24    |	  Last Octet          |
+|  /16    |	  Last 2 Octets       |
+|  /8     |   Last 3 Octets       |
+|  /0     |   All 4 Octets        |
 
 The next screenshow shows the Main Route Table allocated to the VPC and from that we can tell that:
 - 172.31.0.0/16 traffic is local traffic and will be routed within the VPC
@@ -72,7 +72,7 @@ The next screenshow shows the Main Route Table allocated to the VPC and from tha
 #### Main Route Table of VPC
 ![Alt text](routetable.png?raw=true)
 
-We touched upon the Internet Gateway and there is one that come as part of the Default VPC, if you were to create a new VPC and you needed internet access on that VPC another Internet Gateway would have to created and allocated to it.  Below is a screenshot of the default Internet Gateway.
+We touched upon the Internet Gateway and there is one that comes as part of the Default VPC, if you were to create a new VPC and you needed internet access on that VPC another Internet Gateway would have to created and allocated to it.  Internet Gateways cannot be shared between VCPs.  Below is a screenshot of the default Internet Gateway.
 
 #### Main Route Table of VPC
 ![Alt text](internetgw.png?raw=true)
