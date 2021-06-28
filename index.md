@@ -2,7 +2,7 @@
 
 ## Overview
 
-In this section we will cover what a VPC is in the AWS ecosystem, how the default one looks like and all the relevant components which get configured alonside it.
+In this section we will cover what a VPC is in the AWS ecosystem, how the default one looks like and all the relevant components which get configured alongside it.
 
 ## So what is a VPC?
 
